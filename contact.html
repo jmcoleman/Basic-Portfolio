@@ -31,20 +31,47 @@
         </header>
         
         <div id="container">
-            <h1>Contact</h1>
-            <hr>
 
-            <form action="/action_page.php">
-                Name<br>
-                <input type="text" name="fullname" value="John Smith" required></input><br>
-                Email<br>
-                <input type="email" name="email" value="example@gmail.com" required></input><br>
-                Message<br>
-                <textarea name="message" rows="10" cols="50"></textarea><br>
+            <section>
+                <h2>Contact</h2>
+                <hr>
 
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+                <form>  <!-- action="/action_page.php"-->
+                    <!-- TOODO move the style to css -->
+                    <fieldset style="border: 0;">
+                        <!-- TODO move the style.  create accessibility class ?? -->
+                        <!-- <span class="accessibility" style="display: none;"> -->
+                        <legend style="display: none;">Contact Details</legend>
+
+                        <div>
+                            <label for="contact_name">
+                                <span>Name</span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label><br>
+                            <input id="contact_name" type="text" name="fullname" value="John Smith" required/><br>
+                        </div>
+
+                        <div>
+                            <label for="contact_email">
+                                <span>Email</span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label><br>
+                            <input id="contact_email" type="email" name="email" value="example@gmail.com" required/><br>
+                        </div>
+
+                        <div>
+                            <label for="contact_message">
+                                <span>Message</span>
+                            </label><br>
+                            <textarea id="contact_message" name="message" rows="10" cols="50"></textarea><br>
+                        </div>
+
+                        <br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </section>
+
         </div>
 
         <footer>
