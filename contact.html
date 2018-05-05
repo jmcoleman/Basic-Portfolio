@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"/>
+        <!--meta name="viewport" content="width=device-width, initial-scale=1"/-->
+        <!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/-->
+
+        <title>Jenni Coleman Portfolio</title>
+
+        <!--script>
+            $(function(){
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script-->
+    </head>
+    <body>
+        <header>
+            <h1>Jenni Coleman</h1>
+
+            <!--div id="nav-placeholder"-->
+                <!-- move this to a separate file that each page loads from (later) -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            <!--/div-->
+        </header>
+        
+        <div id="container">
+            <h1>Contact</h1>
+            <hr>
+
+            <form action="/action_page.php">
+                Name<br>
+                <input type="text" name="fullname" value="John Smith" required></input><br>
+                Email<br>
+                <input type="email" name="email" value="example@gmail.com" required></input><br>
+                Message<br>
+                <textarea name="message" rows="10" cols="50"></textarea><br>
+
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <footer>
+            <small>Copyright &copy;</small>
+        </footer>
+
+        <!--script src="https://code.jquery.com/jquery-1.10.2.js"></script-->
+    </body>
+</html>
