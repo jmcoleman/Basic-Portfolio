@@ -2,51 +2,45 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8"/>
-        <!--meta name="viewport" content="width=device-width, initial-scale=1"/-->
-        <!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"/--> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 
         <title>Jenni Coleman Portfolio</title>
-
-        <!--script>
-            $(function(){
-                $("#nav-placeholder").load("nav.html");
-            });
-        </script-->
     </head>
-    <body>
-        <header>
-            <h1>Jenni Coleman</h1>
+    <body id="contact-page">
 
-            <!--div id="nav-placeholder"-->
-                <!-- move this to a separate file that each page loads from (later) -->
-                <nav>
+        <header>
+            <div class="main-header">
+                <a class="logo">Jenni Coleman</a>
+
+                <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">About</a></li><!--
+                        --><li><a href="portfolio.html">Portfolio</a></li><!--
+                        --><li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            <!--/div-->
+            </div>
         </header>
         
-        <div id="main-section-content">
+        <div class="main-content">
 
-            <section>
+            <section class="contact-section-content">
                 <h2>Contact</h2>
                 <hr>
 
                 <form>  <!-- action="/action_page.php"-->
-                    <!-- TOODO move the style to css -->
-                    <fieldset style="border: 0;">
-                        <!-- TODO move the style.  create accessibility class ?? -->
-                        <!-- <span class="accessibility" style="display: none;"> -->
-                        <legend style="display: none;">Contact Details</legend>
+                    <fieldset>
+                        <!-- TODO create accessibility class ?? -->
+                        <!-- <span class="accessibility"> -->
+                        <legend>Contact Details</legend>
 
                         <div>
                             <label for="contact_name">
                                 <span>Name</span>
-                                <!--strong><abbr title="required">*</abbr></strong-->
                             </label><br>
                             <input id="contact_name" type="text" name="fullname" value="John Smith" required/><br>
                         </div>
@@ -54,7 +48,6 @@
                         <div>
                             <label for="contact_email">
                                 <span>Email</span>
-                                <!--strong><abbr title="required">*</abbr></strong-->
                             </label><br>
                             <input id="contact_email" type="email" name="email" value="example@gmail.com" required/><br>
                         </div>
@@ -66,10 +59,9 @@
                             <textarea id="contact_message" name="message" rows="10" cols="50"></textarea><br>
                         </div>
 
-                        <br>
                         <input type="submit" value="Submit">
                     </fieldset>
-                </form>
+                    </form>
             </section>
 
         </div>
