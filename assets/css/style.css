@@ -41,6 +41,9 @@ Dimensions:
     color: darkgrey;
 }
 
+*:focus {
+    outline-color: #4AAAA5;
+}
 
 html {
     height: 100%;
@@ -68,22 +71,10 @@ hr {
     color: lightgrey;
     border-style: solid;
 }
+
 /* =======================================
     Navigation links
 ========================================== */
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-}
-
-.navbar * li:last-child {
-    padding-right: 0px;
-}
-
 .main-header {
     color: #4aaaa5;
     /*background-color: #ffffff;*/
@@ -103,6 +94,19 @@ li {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+
+.navbar * li:last-child {
+    padding-right: 0px;
 }
 
 .navbar {
@@ -130,11 +134,12 @@ li {
     box-shadow: 0 0 2px 0px darkgrey; 
 }
 
+/*
 .navbar a:active {
     color: #84F6F1;
+    font-weight: bolder;
 }
-
-/*========================================== */
+*/
 
 h1, h2, h3, h4, h5, h6 {
     color: #4aaaa5;
@@ -162,6 +167,10 @@ footer {
     padding-top: 20px;
 }
 
+/*==========================================
+    Main Section
+========================================== */
+
 .main-content {
     /* Background pattern from Toptal Subtle Patterns */
     background-image: url("../images/confectionary.png");
@@ -186,11 +195,93 @@ footer {
     padding: 0px 20px 20px 0px;
 }
 
-.project-image-container img{
+/*==========================================
+    Portfolio Section
+========================================== */
+
+.portfolio-section-content .banner-container{
+    position:relative;
+
+    float: left;
+    text-align: center;
+    margin: 10px;
+
+    /*background:#4aaaa5;
+    padding:10px;*/
+}
+
+.portfolio-section-content .banner-container img {
+    vertical-align:top;
+}
+
+.portfolio-section-content .banner-text{
+    position:absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    background: #4aaaa5;
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.portfolio-section-content div.banner-container img{
     height: 200px;
     width: 200px;
 }
 
+/*********************************/
+
+/* Container holding the image and the text */
+div.project-image-container {
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Bottom left text */
+div.project-text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    color: white;
+}
+
+div.project-image-container img{
+    height: 200px;
+    width: 200px;
+}
+
+/*
+div[id^="project"] {
+    color: white;
+} */
+
+.group:after:nth-child(2) {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.group {
+    zoom: 1;            
+}
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+/*========================================== 
+    Contact Section
+========================================== */
 .contact-section-content fieldset {
     border: 0;
 }
@@ -233,17 +324,14 @@ footer {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: darkgrey;
-  }
-  ::-moz-placeholder { /* Firefox 19+ */
-    color: darkgrey;
-  }
-  :-ms-input-placeholder { /* IE 10+ */
-    color: darkgrey;
-  }
-  :-moz-placeholder { /* Firefox 18- */
-    color: darkgrey;
-  }
-
-*:focus {
-    outline-color: #4AAAA5;
 }
+::-moz-placeholder { /* Firefox 19+ */
+    color: darkgrey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: darkgrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: darkgrey;
+}
+
