@@ -231,36 +231,7 @@ footer {
     width: 200px;
 }
 
-/*********************************/
-
-/* Container holding the image and the text */
-div.project-image-container {
-    position: relative;
-    float: left;
-    text-align: center;
-    margin: 10px;
-}
-
-/* Bottom left text */
-div.project-text-block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #4aaaa5;
-    color: white;
-}
-
-div.project-image-container img{
-    height: 200px;
-    width: 200px;
-}
-
 /*
-div[id^="project"] {
-    color: white;
-} */
-
 .group:after:nth-child(2) {
     content: "";
     display: table;
@@ -270,12 +241,12 @@ div[id^="project"] {
 .group {
     zoom: 1;            
 }
+*/
 
 .clearfix:after { 
-    content: "."; 
+    content: ""; 
     visibility: hidden; 
     display: block; 
-    height: 0; 
     clear: both;
  }
 
